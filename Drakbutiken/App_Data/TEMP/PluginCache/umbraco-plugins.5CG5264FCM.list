@@ -4,15 +4,15 @@
     <add type="Umbraco.Core.Models.Identity.IdentityModelMappings, Umbraco.Core, Version=1.0.6261.14290, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.Strategies.RelateOnCopyHandler, Umbraco.Core, Version=1.0.6261.14290, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Core.Strategies.RelateOnTrashHandler, Umbraco.Core, Version=1.0.6261.14290, Culture=neutral, PublicKeyToken=null" />
-    <add type="umbraco.providers.members.MembershipEventHandler, umbraco.providers, Version=1.0.6261.14294, Culture=neutral, PublicKeyToken=null" />
-    <add type="DotSee.AutoNodeBootstrapper, DotSee.AutoNode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="Umbraco.ModelsBuilder.Umbraco.ModelsBuilderApplication, Umbraco.ModelsBuilder, Version=3.0.5.96, Culture=neutral, PublicKeyToken=null" />
-    <add type="DotSee.VirtualNodes.VirtualNodesEventHandler, DotSee.VirtualNodes, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null" />
     <add type="DotSee.NodeRestrict.Bootstrapper, DotSee.NodeRestrict, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="DotSee.PageMetas.PageMetasEventHandler, DotSee.PageMetas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="DotSee.BlogEvents, App_Code.ikedukeo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="DotSee.Portfolio.PortfolioEvents, App_Code.ikedukeo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="DotSee.CustomEvents, App_Code.ikedukeo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="DotSee.AutoNodeBootstrapper, DotSee.AutoNode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.providers.members.MembershipEventHandler, umbraco.providers, Version=1.0.6261.14294, Culture=neutral, PublicKeyToken=null" />
+    <add type="DotSee.VirtualNodes.VirtualNodesEventHandler, DotSee.VirtualNodes, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.ModelsBuilder.Umbraco.ModelsBuilderApplication, Umbraco.ModelsBuilder, Version=3.0.5.96, Culture=neutral, PublicKeyToken=null" />
+    <add type="DotSee.Portfolio.PortfolioEvents, App_Code.kafb2rmx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="DotSee.CustomEvents, App_Code.kafb2rmx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="DotSee.BlogEvents, App_Code.kafb2rmx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.BatchedDatabaseServerMessengerStartup, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Routing.RedirectTrackingEventHandler, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Models.Mapping.RelationModelMapper, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
@@ -52,9 +52,9 @@
     <add type="umbraco.presentation.nodeFactory.UmbracoSiteMapProviderAccessUpdate, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.presentation.EnsureSystemPathsApplicationStartupHandler, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.presentation.umbraco.Search.ExamineEvents, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
-    <add type="umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.6261.14298, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.BusinessLogic.ApplicationRegistrar, businesslogic, Version=1.0.6261.14292, Culture=neutral, PublicKeyToken=null" />
     <add type="umbraco.BusinessLogic.ApplicationTreeRegistrar, businesslogic, Version=1.0.6261.14292, Culture=neutral, PublicKeyToken=null" />
+    <add type="umbraco.editorControls.PickerRelations.PickerRelationsEventHandler, umbraco.editorControls, Version=1.0.6261.14298, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter" resolutionType="FindAllTypes" />
   <baseType type="Umbraco.Core.PropertyEditors.IPropertyValueConverter" resolutionType="FindAllTypes">
@@ -81,15 +81,14 @@
     <add type="Umbraco.Web.PropertyEditors.ValueConverters.RteMacroRenderingValueConverter, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Web.Mvc.SurfaceController" resolutionType="FindAllTypes">
-    <add type="DotSee.Controllers.NewsletterSubscriptionSurfaceController, App_Code.ikedukeo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="DotSee.Controllers.ContactSurfaceController, App_Code.ikedukeo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="DotSee.Controllers.NewsletterSubscriptionSurfaceController, App_Code.kafb2rmx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <add type="DotSee.Controllers.ContactSurfaceController, App_Code.kafb2rmx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Controllers.UmbProfileController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Controllers.UmbLoginStatusController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Controllers.UmbRegisterController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Controllers.UmbLoginController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Web.WebApi.UmbracoApiController" resolutionType="FindAllTypes">
-    <add type="Umbraco.ModelsBuilder.Umbraco.ModelsBuilderBackOfficeController, Umbraco.ModelsBuilder, Version=3.0.5.96, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Editors.GravatarController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.HealthCheck.HealthCheckController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.Editors.RedirectUrlManagementController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
@@ -135,6 +134,7 @@
     <add type="Umbraco.Web.WebServices.ExamineManagementApiController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.WebServices.TagsController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.WebServices.XmlDataIntegrityController, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
+    <add type="Umbraco.ModelsBuilder.Umbraco.ModelsBuilderBackOfficeController, Umbraco.ModelsBuilder, Version=3.0.5.96, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Core.Media.IThumbnailProvider" resolutionType="FindAllTypes">
     <add type="Umbraco.Web.Media.ThumbnailProviders.MediaTypeIconThumbnailProvider, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
@@ -145,6 +145,7 @@
     <add type="Umbraco.Web.Media.ImageUrlProviders.ImageUrlProvider, umbraco, Version=1.0.6261.14296, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Core.Models.PublishedContent.PublishedContentModel" resolutionType="FindAllTypes">
+    <add type="DotSee.Models.PageBlogListViewModel, App_Code.kafb2rmx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PublishedContentModels.AbstractBackgroundImage, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PublishedContentModels.Abstractlink, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PublishedContentModels.AbstractNonPage, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
@@ -217,7 +218,6 @@
     <add type="Umbraco.Web.PublishedContentModels.SectionTeam, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PublishedContentModels.SectionTestimonials, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <add type="Umbraco.Web.PublishedContentModels.SectionText, Umbraco.Web.PublishedContentModels, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <add type="DotSee.Models.PageBlogListViewModel, App_Code.ikedukeo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
   </baseType>
   <baseType type="Umbraco.Core.PropertyEditors.IParameterEditor" resolutionType="FindAllTypes">
     <add type="Umbraco.Core.PropertyEditors.ParameterEditor, Umbraco.Core, Version=1.0.6261.14290, Culture=neutral, PublicKeyToken=null" />
