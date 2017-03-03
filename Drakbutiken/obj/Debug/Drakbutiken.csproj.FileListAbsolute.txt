@@ -235,7 +235,6 @@ C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\Umbraco.Core.xm
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\umbraco.DataLayer.xml
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\umbraco.editorControls.xml
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\umbraco.MacroEngines.xml
-C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\Umbraco.ModelsBuilder.pdb
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\umbraco.providers.xml
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\Umbraco.Web.UI.xml
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\UmbracoExamine.xml

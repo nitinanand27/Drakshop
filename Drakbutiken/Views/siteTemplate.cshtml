@@ -77,6 +77,29 @@
 }
 
 <body class="full-intro @bodyCssClass">
+    <!--Facebook SDK for Social Plugins-->
+
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1002935629849783',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!--END Facebook SDK for Social Plugins-->
+  
     @Html.Raw(configPage.ScriptAfterBodyStart)
     <section id="preloader">
         <div class="loader" id="loader">

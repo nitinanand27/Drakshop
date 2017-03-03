@@ -2,7 +2,7 @@
 @using DotSee.UmbracoExtensions;
 @using System.Web.Mvc
 @using System.Web.Mvc
-@{ 
+@{
 
     IPublishedContent currPage = Model;
     Pagehome homePage = (Pagehome)currPage.AncestorOrSelf(1);
@@ -11,8 +11,8 @@
     //-------------------------------------------------------------------
     //Image and optional image link
     //-------------------------------------------------------------------
-    string defaultLogo = configPage.DefaultLogo.IfNull(x=>"").ToString();
-    string userImage = configPage.FooterImage.IfNull(x=>"").ToString();
+    string defaultLogo = configPage.DefaultLogo.IfNull(x => "").ToString();
+    string userImage = configPage.FooterImage.IfNull(x => "").ToString();
     //If user image is not set, use default logo
     string footerImage = (string.IsNullOrEmpty(userImage)) ? defaultLogo : userImage;
     string footerImageLinkExternal = configPage.FooterImageLinkExternal;
@@ -75,8 +75,7 @@
     string footerAddress = configPage.FooterAddress;
     string footerEmail = configPage.FooterEmail;
     string footerTelephone = configPage.FooterTelephone;
-
-  
+    bool footerLikeButton = configPage.FooterLikeButton;
 
 }
 
@@ -96,6 +95,7 @@
                 {
                     <img src="@footerImage" />
                 }
+
             </div>
             <!-- Logo -->
             <!-- Newsletter -->
@@ -106,22 +106,22 @@
                 string apiKey = (string.IsNullOrEmpty(configPage.MailChimpApikey)) ? System.Configuration.ConfigurationManager.AppSettings.Get("MailChimpApiKey") : configPage.MailChimpApikey;
                 string listId = configPage.MailChimpListID;
 
-            
-            if (!string.IsNullOrEmpty(apiKey))
-{
-            <div class="col-md-4 col-sm-5 col-xs-12 mb-xs-30">
-                <div class="newsletter">
-                    @Html.Partial("NewsletterForm", new DotSee.Models.NewsletterSubscription())
-                </div>
-            </div>
+
+                if (!string.IsNullOrEmpty(apiKey))
+                {
+                    <div class="col-md-4 col-sm-5 col-xs-12 mb-xs-30">
+                        <div class="newsletter">
+                            @Html.Partial("NewsletterForm", new DotSee.Models.NewsletterSubscription())
+                        </div>
+                    </div>
+                }
             }
-}
             <!-- End Newsletter -->
             <!-- Social -->
             <div class="col-md-3 col-md-offset-2 col-sm-4 col-xs-12">
                 <ul class="social">
-                    @{ 
-                        Dictionary<string,string> socials = new Dictionary<string,string>();
+                    @{
+                        Dictionary<string, string> socials = new Dictionary<string, string>();
                         socials.Add("facebook", configPage.SocialFacebook);
                         socials.Add("twitter", configPage.SocialTwitter);
                         socials.Add("instagram", configPage.SocialInstagram);
@@ -137,8 +137,8 @@
                     {
                         @RenderSocialLink(s, socials[s])
                     }
-                    
                 </ul>
+
             </div>
             <!-- End Social -->
         </div>
@@ -148,56 +148,77 @@
             <div class="col-md-3 col-sm-12 col-xs-12 mb-sm-30">
                 @if (!string.IsNullOrEmpty(footerText))
                 {
-                <p class="mb-xs-0">@Html.Raw(umbraco.library.ReplaceLineBreaks(footerText))</p>
+                    <p class="mb-xs-0">@Html.Raw(umbraco.library.ReplaceLineBreaks(footerText))</p>
                 }
-                @if (!string.IsNullOrEmpty(footerLink)) { 
-                <a class="btn-link-a" target="@footerLinkTarget" href="@footerLink">@footerLinkText</a>
+                @if (!string.IsNullOrEmpty(footerLink))
+                {
+                    <a class="btn-link-a" target="@footerLinkTarget" href="@footerLink">@footerLinkText</a>
                 }
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 mb-sm-30 mb-xs-0">
                 @if (footerPageLinksColumn1.Count() > 0)
                 {
-                <ul class="link">
-                    @foreach (IPublishedContent item in footerPageLinksColumn1) {
-                    <li><a href="@Umbraco.Url(item.Id)">@item.GetPageTitleForMenu()</a></li>
-                    }
-                </ul>
+                    <ul class="link">
+                        @foreach (IPublishedContent item in footerPageLinksColumn1)
+                        {
+                            <li><a href="@Umbraco.Url(item.Id)">@item.GetPageTitleForMenu()</a></li>
+                        }
+                    </ul>
                 }
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 mb-sm-30">
                 @if (footerPageLinksColumn2.Count() > 0)
                 {
-                <ul class="link">
-                    @foreach (IPublishedContent item in footerPageLinksColumn2)
-                    {
-                        <li><a href="@Umbraco.Url(item.Id)">@item.GetPageTitleForMenu()</a></li>
-                    }
-                </ul>
+                    <ul class="link">
+                        @foreach (IPublishedContent item in footerPageLinksColumn2)
+                        {
+                            <li><a href="@Umbraco.Url(item.Id)">@item.GetPageTitleForMenu()</a></li>
+                        }
+                    </ul>
                 }
             </div>
             <div class="col-md-3 col-sm-12 col-xs-12">
-                @if (!string.IsNullOrEmpty(footerAddress)) {
-                <p>@Html.Raw(umbraco.library.ReplaceLineBreaks(footerAddress))</p>
+                @if (!string.IsNullOrEmpty(footerAddress))
+                {
+                    <p>@Html.Raw(umbraco.library.ReplaceLineBreaks(footerAddress))</p>
                 }
                 @if (!string.IsNullOrEmpty(footerEmail) || !string.IsNullOrEmpty(footerTelephone))
                 {
-                <ul class="link-small">
-                    @if (!string.IsNullOrEmpty(footerEmail)) {
-                    <li><a href="mailto:@footerEmail"><i class="fa fa-envelope-o left"></i>@footerEmail</a></li>
-                    }
-                    @if (!string.IsNullOrEmpty(footerTelephone)) {
-                    <li><a><i class="fa fa-phone left"></i>@footerTelephone</a></li>
-                    }
-                </ul>
+                    <ul class="link-small">
+                        @if (!string.IsNullOrEmpty(footerEmail))
+                        {
+                            <li><a href="mailto:@footerEmail"><i class="fa fa-envelope-o left"></i>@footerEmail</a></li>
+                        }
+                        @if (!string.IsNullOrEmpty(footerTelephone))
+                        {
+                            <li><a><i class="fa fa-phone left"></i>@footerTelephone</a></li>
+                        }
+                        <!--Facebook Like/Share Button-->
+                        @if (@footerLikeButton)
+                        {
+                            <br />
+                            <li>
+                                <div class="fb-like"
+                                     data-share="true"
+                                     data-width="450"
+                                     data-show-faces="true">
+                                </div>
+                            </li>
+                        }
+                        <!--END Facebook Like/Share Button-->
+                       
+                    </ul>
                 }
             </div>
+
         </div>
         <!-- End Footer Info -->
+
     </div>
 
     <hr />
 
-    <!-- Copyright Bar -->
+    <!--END Copyright Bar -->
     <section class="copyright ptb-15">
         <div class="container">
             <p class="copyright">
@@ -210,7 +231,8 @@
 </footer>
 <!-- END FOOTER -->
 
-@helper RenderSocialLink (string service, string link) {
+@helper RenderSocialLink(string service, string link)
+{
 if (string.IsNullOrEmpty(link)) { return; }
 if (!link.StartsWith("http")) { link = "https://" + link; }
 

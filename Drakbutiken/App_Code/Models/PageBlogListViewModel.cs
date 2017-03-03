@@ -26,5 +26,6 @@ namespace DotSee.Models
         public string CustomMessage { get; set; }
 
         public IEnumerable<PageArticleItem> BlogPosts { get; set; }
+
     }
 }
