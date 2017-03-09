@@ -14,7 +14,7 @@
 
     if (pushDown)
     {
-        <div class="spacer-75"></div>
+<div class="spacer-75"></div>
     }
 
     switch (Model.DocumentTypeAlias)
@@ -22,6 +22,15 @@
         case SectionText.ModelTypeAlias:
             @Html.Partial("SectionText", Model)
             @DisplaySeparator(useHr)
+            break;
+
+        case InfoSection.ModelTypeAlias:
+            @Html.Partial("SectionInfo", Model)
+            @DisplaySeparator(useHr)
+            break;
+
+        case TestSection.ModelTypeAlias:
+            @Html.Partial("TestSection", Model)
             break;
 
         case SectionAccordion.ModelTypeAlias:
@@ -123,7 +132,7 @@
             break;
 
         case SectionPlaceholder.ModelTypeAlias:
-            
+
             string nodeIds = ((SectionPlaceholder)Model).ReusableElements;
             foreach (IPublishedContent sectionItem in Model.GetPickerItemsByValue(nodeIds))
             {
@@ -139,10 +148,10 @@
     }
 }
 
-@helper DisplaySeparator(bool doDisplay) { 
+@helper DisplaySeparator(bool doDisplay) {
 
     if (doDisplay)
     {
-        <hr/>
+<hr />
     }
 }

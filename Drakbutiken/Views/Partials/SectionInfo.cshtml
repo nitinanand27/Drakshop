@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<InfoSection>
+    
+@using DotSee.UmbracoExtensions
+
+@{
+    InfoSection currSection = Model;
+}
+
+<section id="section_@currSection.Id" class="">
+    <div class="container">
+        <div class="row">
+            <img src="@currSection.ImageUrl" alt="Image" style="width: 20%; height: 20%;" />
+            <p>@currSection.InfoText</p>
+            <hr />
+            <ul>
+                @if (!String.IsNullOrEmpty(currSection.FacebookLinkUrl) || !String.IsNullOrEmpty(currSection.YoutubeLinkUrl))
+            {
+                if (!String.IsNullOrEmpty(currSection.FacebookLinkUrl))
+                {
+                        <li><a href="@currSection.FacebookLinkUrl"><img src="http://vectorlogofree.com/wp-content/uploads/2014/01/44646-facebook-logo-in-circular-shape-icon-vector-icon-vector-eps.png" alt="FB Icon" /></a></li>
+                    }
+                    else
+                    {
+                        <li><a href="@currSection.YoutubeLinkUrl"><img src="http://www.iconsdb.com/icons/preview/black/youtube-4-xxl.png" alt="Youtube Icon" /></a></li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</section>

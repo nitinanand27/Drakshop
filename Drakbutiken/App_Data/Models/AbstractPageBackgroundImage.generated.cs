@@ -33,6 +33,9 @@ namespace Umbraco.Web.PublishedContentModels
 		/// <summary>Background Image</summary>
 		string PageBackgroundImage { get; }
 
+		/// <summary>Show Info Box</summary>
+		bool ShowInfoBox { get; }
+
 		/// <summary>Summary</summary>
 		string Summary { get; }
 
@@ -106,6 +109,18 @@ namespace Umbraco.Web.PublishedContentModels
 
 		/// <summary>Static getter for Background Image</summary>
 		public static string GetPageBackgroundImage(IAbstractPageBackgroundImage that) { return that.GetPropertyValue<string>("pageBackgroundImage"); }
+
+		///<summary>
+		/// Show Info Box
+		///</summary>
+		[ImplementPropertyType("showInfoBox")]
+		public bool ShowInfoBox
+		{
+			get { return GetShowInfoBox(this); }
+		}
+
+		/// <summary>Static getter for Show Info Box</summary>
+		public static bool GetShowInfoBox(IAbstractPageBackgroundImage that) { return that.GetPropertyValue<bool>("showInfoBox"); }
 
 		///<summary>
 		/// Summary: Enter a summary which will appear under the page title. If breadcrumbs are enabled summary will appear underneath the breadcrumb.

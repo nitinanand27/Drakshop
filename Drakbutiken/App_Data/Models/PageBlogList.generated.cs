@@ -352,6 +352,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Show Info Box
+		///</summary>
+		[ImplementPropertyType("showInfoBox")]
+		public bool ShowInfoBox
+		{
+			get { return AbstractPageBackgroundImage.GetShowInfoBox(this); }
+		}
+
+		///<summary>
 		/// Summary: Enter a summary which will appear under the page title. If breadcrumbs are enabled summary will appear underneath the breadcrumb.
 		///</summary>
 		[ImplementPropertyType("summary")]

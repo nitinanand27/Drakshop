@@ -1,0 +1,36 @@
+﻿ 2017-03-07 16:00:42,981 [P6616/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.10 application starting on 5CG5264FCM
+ 2017-03-07 16:00:43,014 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-03-07 16:00:43,031 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 17ms)
+ 2017-03-07 16:00:43,081 [P6616/D2/T1] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-03-07 16:00:43,082 [P6616/D2/T1] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-03-07 16:00:43,089 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2017-03-07 16:00:43,141 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 52ms)
+ 2017-03-07 16:00:43,159 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-03-07 16:00:43,160 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+ 2017-03-07 16:00:43,161 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-03-07 16:00:43,162 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2017-03-07 16:00:43,176 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2017-03-07 16:00:43,177 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+ 2017-03-07 16:00:43,178 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2017-03-07 16:00:43,182 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 4ms)
+ 2017-03-07 16:00:43,217 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2017-03-07 16:00:43,218 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 1ms)
+ 2017-03-07 16:00:43,219 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2017-03-07 16:00:43,220 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2017-03-07 16:00:45,172 [P6616/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-03-07 16:00:45,294 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2017-03-07 16:00:45,298 [P6616/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 4ms)
+ 2017-03-07 16:00:45,371 [P6616/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-03-07 16:00:45,392 [P6616/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-03-07 16:00:45,444 [P6616/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-03-07 16:00:45,455 [P6616/D2/T1] INFO  DotSee.AutoNode - AutoNode: Loading configuration...
+ 2017-03-07 16:00:45,455 [P6616/D2/T1] INFO  DotSee.AutoNode - AutoNode: Loading configuration complete
+ 2017-03-07 16:00:45,479 [P6616/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2571ms)
+ 2017-03-07 16:00:45,598 [P6616/D2/T9] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:52441/umbraco (UmbracoModule request)
+ 2017-03-07 16:00:45,943 [P6616/D2/T10] INFO  umbraco.content - Load Xml from file...
+ 2017-03-07 16:00:45,948 [P6616/D2/T10] INFO  umbraco.content - Loaded Xml from file.
+ 2017-03-07 16:00:46,740 [P6616/D2/T10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-03-07 16:00:46,742 [P6616/D2/T10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2017-03-07 16:01:45,976 [P6616/D2/T16] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-03-06 16:01:45
+ 2017-03-07 16:01:46,090 [P6616/D2/T14] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-03-07 16:01:46,091 [P6616/D2/T14] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)

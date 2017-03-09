@@ -16,24 +16,58 @@
             {
                 string bgImageUrl = currPage.GetPickerMediaByValue(currPage.PageBackgroundImage).First().GetCropUrl(width: 1920, height:600, upScale: true);
 
-                <section class="inner-intro @smallIntroCss @overlayCss parallax parallax-background2" style="background:url(@bgImageUrl);">
+                <section class="inner-intro @smallIntroCss @overlayCss parallax parallax-background2" style="background: url(@bgImageUrl);">
                     <div class="container">
                         <div class="row title @textCss">
-                            <h1 class="h1">@currPage.GetPageTitleInternal()</h1>
+                            @if (!currPage.ShowInfoBox)
+                            {
+                                <h1 class="h1">@currPage.GetPageTitleInternal()</h1>
+                            }
+                            <!--Show Info Box-->
+                            @if (currPage.ShowInfoBox)
+                            {
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-sm-offset-6 col-lg-4 col-lg-offset-8">
+                                            <div class="infobox" style="position: absolute; z-index: 1; margin: 100px 100px 0 0; -webkit-box-shadow: 5px 5px 5px 0 rgba(51, 51, 51, .8); box-shadow: 5px 5px 5px 0 rgba(51, 51, 51, .8); font-size: 16px; font-weight: 600; line-height: 1.4; text-align: center; background: #fff;">
+                                                <img src="https://3.bp.blogspot.com/-W__wiaHUjwI/Vt3Grd8df0I/AAAAAAAAA78/7xqUNj8ujtY/s1600/image02.png" alt="IMAGE" style="max-width: 100%; vertical-align: middle; border: 0; box-sizing: inherit;">
+                                                <div style="padding: 20px 20px 40px;">
+                                                    <p>
+                                                        Egnahemsvägen 24A
+                                                        <br> 413 21 Göteborg
+                                                        <br>
+                                                        <a href="#">0760 38 35 37</a>
+                                                        <br>
+                                                        <a href="#">drakegbg@gmail.com</a>
+                                                    </p>
+                                                    <hr style="margin-bottom: 0px; margin-top: 0px; border-top: 1px solid #f1f1f1; border-bottom: none; border-left: none; border-right: none; margin: 30px 0; border-style: solid; border-color: rgba(0, 0, 0, .4); border-bottom: 0;">
+                                                    <ul class="social" style="font-weight: 400; font-size: 20px; margin: 0; padding: 0; list-style: none;">
+                                                        <li><a href="#"><i class="ss-icon"><img alt="FACEBOOK ICON"/></i></a></li>
+                                                        <li><a href="#"><i class="ss-icon"><img alt="YOUTUBE ICON"/></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            <!--END Show info box-->
+
                             @if (!hideBreadcrumb || !string.IsNullOrEmpty(currPage.Summary))
                             {
                                 <div class="page-breadcrumb">
                                     @if (!hideBreadcrumb)
                                     {
-                                        @Html.Partial("Pagebreadcrumb", currPage, new ViewDataDictionary { {"currPage", ViewData["currPage"]} })
-                                        <br />
+                                        @Html.Partial("Pagebreadcrumb", currPage, new ViewDataDictionary {{"currPage", ViewData["currPage"]}})
+                                        <br/>
                                     }
                                     @currPage.Summary
                                 </div>
                             }
                         </div>
-                    </div>
-                </section>
+
+                                    </div>
+</section>
                 <div class="clearfix"></div>
             }
 }

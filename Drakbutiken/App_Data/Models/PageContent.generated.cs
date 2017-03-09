@@ -46,6 +46,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Show InfoSection
+		///</summary>
+		[ImplementPropertyType("showInfoSection")]
+		public bool ShowInfoSection
+		{
+			get { return this.GetPropertyValue<bool>("showInfoSection"); }
+		}
+
+		///<summary>
 		/// Meta Description
 		///</summary>
 		[ImplementPropertyType("metaDescription")]
@@ -232,6 +241,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public string PageBackgroundImage
 		{
 			get { return AbstractPageBackgroundImage.GetPageBackgroundImage(this); }
+		}
+
+		///<summary>
+		/// Show Info Box
+		///</summary>
+		[ImplementPropertyType("showInfoBox")]
+		public bool ShowInfoBox
+		{
+			get { return AbstractPageBackgroundImage.GetShowInfoBox(this); }
 		}
 
 		///<summary>
