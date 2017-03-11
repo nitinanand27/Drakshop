@@ -1,0 +1,14 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<TestSection>
+
+@using DotSee.UmbracoExtensions
+
+@{
+    TestSection currSection = Model;
+}
+
+<section id="section_@currSection.Id" class="">
+    <div class="container">
+        @currSection.Prop1
+        @currSection.Prop2
+    </div>
+</section>

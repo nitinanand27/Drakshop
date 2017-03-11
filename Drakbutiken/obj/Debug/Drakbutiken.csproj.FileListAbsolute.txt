@@ -238,6 +238,6 @@ C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\umbraco.MacroEn
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\umbraco.providers.xml
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\Umbraco.Web.UI.xml
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\bin\UmbracoExamine.xml
-C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\obj\Debug\Drakbutiken.csprojResolveAssemblyReference.cache
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\obj\Debug\Drakbutiken.dll
 C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\obj\Debug\Drakbutiken.pdb
+C:\Users\Studerande\Documents\GitHub\Drakbutiken\Drakbutiken\obj\Debug\Drakbutiken.csprojResolveAssemblyReference.cache

@@ -305,11 +305,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\NuGetBackup\20170301-130329\bin\Umbraco.ModelsBuilder.dll" />
+    <Content Include="bin\DotSee.AutoNode.dll" />
+    <Content Include="bin\DotSee.Common.dll" />
+    <Content Include="bin\DotSee.NodeRestrict.dll" />
+    <Content Include="bin\DotSee.PageMetas.dll" />
+    <Content Include="bin\DotSee.VirtualNodes.dll" />
+    <Content Include="bin\MailChimp.Net.V3.dll" />
+    <Content Include="bin\Umbraco.Web.PublishedContentModels.dll" />
     <Content Include="packages.config" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="Views\pageArticleItem.cshtml" />
     <Content Include="Views\Partials\SectionText.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
@@ -341,12 +349,18 @@
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
     <Content Include="Views\Partials\PageFooter.cshtml" />
-    <Content Include="Views\pageBlogList.cshtml" />
     <Content Include="Views\Partials\SectionInfo.cshtml" />
     <Content Include="Views\Partials\PageSectionRenderer.cshtml" />
     <Content Include="Views\Partials\TestSection.cshtml" />
     <Content Include="Views\pageInner.cshtml" />
     <Content Include="Views\Partials\PageBackgroundImage.cshtml" />
+    <Content Include="Views\home.cshtml" />
+    <Content Include="Views\pagePortfolioItem.cshtml" />
+    <Content Include="Views\siteTemplate.cshtml" />
+    <None Include="Properties\PublishProfiles\Default Settings %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <None Include="Properties\PublishProfiles\DrakshopFTP.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -383,7 +397,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\Models\PageBlogListViewModel.cs" />
-    <Content Include="App_Code\Controllers\PageBlogListController.cs" />
+    <Content Include="App_Code\Installer\AddAppConfigKey.cs" />
+    <Content Include="App_Code\Installer\XmlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -391,7 +406,14 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\Blog\" />
+    <Folder Include="App_Code\Controllers\" />
     <Folder Include="App_Data\Models\" />
+    <Folder Include="App_Data\TEMP\PluginCache\" />
+    <Folder Include="Views\MacroPartials\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
