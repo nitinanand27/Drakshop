@@ -357,10 +357,6 @@
     <Content Include="Views\home.cshtml" />
     <Content Include="Views\pagePortfolioItem.cshtml" />
     <Content Include="Views\siteTemplate.cshtml" />
-    <None Include="Properties\PublishProfiles\Default Settings %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\Default Settings %283%29.pubxml" />
-    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
-    <None Include="Properties\PublishProfiles\DrakshopFTP.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
